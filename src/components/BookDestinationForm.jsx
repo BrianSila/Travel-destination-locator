@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./BookDestinationForm.css";
 
-const AVERAGE_COST_PER_DAY = destination.averageCost;
+const AVERAGE_COST_PER_DAY = 1000;
 
 const BookDestinationForm = ({ destination, onClose }) => {
   const [formData, setFormData] = useState({
@@ -34,7 +34,7 @@ const BookDestinationForm = ({ destination, onClose }) => {
     const bookingData = { ...formData, destination: destination.name };
 
     try {
-      const response = await fetch("http://localhost:3000/Booked Locations", {
+      const response = await fetch("http://localhost:3000/Booked-Locations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(bookingData),

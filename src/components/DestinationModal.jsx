@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import BookDestinationForm from "./BookDestinationForm";
+import CommentForm from "./CommentForm"; // Import the new CommentForm component
 import "./DestinationModal.css";
 
 const DestinationModal = ({ destination, isOpen, onClose }) => {
   const [isBookingFormOpen, setBookingFormOpen] = useState(false);
+  const [isCommentFormOpen, setCommentFormOpen] = useState(false); // State for comment form
 
   const handleOpenBookingForm = () => {
     setBookingFormOpen(true);
@@ -11,6 +13,14 @@ const DestinationModal = ({ destination, isOpen, onClose }) => {
 
   const handleCloseBookingForm = () => {
     setBookingFormOpen(false);
+  };
+
+  const handleOpenCommentForm = () => {
+    setCommentFormOpen(true);
+  };
+
+  const handleCloseCommentForm = () => {
+    setCommentFormOpen(false);
   };
 
   const getStarRating = (rating) => {
@@ -81,6 +91,9 @@ const DestinationModal = ({ destination, isOpen, onClose }) => {
             <button className="book-btn" onClick={handleOpenBookingForm}>
               Book a Trip
             </button>
+            <button className="comment-btn" onClick={handleOpenCommentForm}>
+              Leave a Comment
+            </button>
           </div>
         </div>
       </div>
@@ -88,6 +101,12 @@ const DestinationModal = ({ destination, isOpen, onClose }) => {
         <BookDestinationForm
           destination={destination}
           onClose={handleCloseBookingForm}
+        />
+      )}
+      {isCommentFormOpen && (
+        <CommentForm
+          destinationId={destination.id}
+          onClose={handleCloseCommentForm}
         />
       )}
     </div>

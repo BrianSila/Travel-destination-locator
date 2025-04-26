@@ -90,6 +90,31 @@
   background-color: #e68900;
 }
 
+.comment-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.comment-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.comment-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.comment-btn:active {
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .modal-body {
     flex-direction: column;
@@ -116,5 +141,22 @@
   .book-btn {
     font-size: 0.9rem;
     padding: 8px 16px;
+  }
+
+  .comment-form {
+    padding: 1rem;
+  }
+
+  .comment-form h3 {
+    font-size: 1.2rem;
+  }
+
+  .comment-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .comment-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 }

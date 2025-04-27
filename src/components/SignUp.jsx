@@ -51,10 +51,10 @@ function Signup({ onSignup, onClose, onSwitchToLogin }) {
 
   return (
     <div className="signup-container">
+      <button type="button" className="close-button" onClick={onClose}>
+        &times;
+      </button>
       <form onSubmit={handleSubmit}>
-        <button type="button" className="close-button" onClick={onClose}>
-          &times;
-        </button>
         <h2>Sign Up</h2>
         <input
           type="text"

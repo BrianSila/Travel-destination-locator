@@ -54,7 +54,7 @@ const DestinationCard = ({ destination, onEdit }) => {
             </button>
             <button
               className="edit-btn"
-              onClick={() => onEdit({ ...destination })}
+              onClick={() => onEdit(destination)}
             >
               Edit
             </button>

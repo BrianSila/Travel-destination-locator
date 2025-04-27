@@ -11,7 +11,7 @@ const DestinationForm = ({ existingData, onSubmit }) => {
       image: "",
       bestTimeToVisit: "",
       averageCost: "",
-      travelTip: "",
+      travelTips: "",
       longDescription: "",
       rating: "",
     }
@@ -28,6 +28,15 @@ const DestinationForm = ({ existingData, onSubmit }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      if (existingData && !existingData.id) {
+        console.error(
+          "Error: Missing destination ID for update. Existing data:",
+          existingData
+        );
+        alert("Error: Missing destination ID for update.");
+        return;
+      }
+
       const response = await fetch(
         existingData
           ? `http://localhost:3000/destinations/${existingData.id}`
@@ -54,7 +63,7 @@ const DestinationForm = ({ existingData, onSubmit }) => {
           image: "",
           bestTimeToVisit: "",
           averageCost: "",
-          travelTip: "",
+          travelTips: "",
           longDescription: "",
           rating: "",
         });
@@ -162,7 +171,7 @@ const DestinationForm = ({ existingData, onSubmit }) => {
           <input
             type="text"
             name="travelTip"
-            value={formData.travelTip}
+            value={formData.travelTips}
             onChange={handleChange}
             required
           />
@@ -174,8 +183,9 @@ const DestinationForm = ({ existingData, onSubmit }) => {
             name="rating"
             value={formData.rating}
             onChange={handleChange}
-            min="1"
+            min="0"
             max="5"
+            step="0.1"
             required
           />
         </label>

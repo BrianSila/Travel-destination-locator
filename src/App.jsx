@@ -23,9 +23,9 @@ function App() {
 
   useEffect(() => {
     fetch("http://localhost:3000/users")
-    .then(r => r.json)
-    .then(data => setLoggedInUser(data))
-  },[])
+      .then((r) => r.json()) // Add parentheses to correctly invoke the json method
+      .then((data) => setLoggedInUser(data));
+  }, []);
 
   const handleLogin = (user) => {
     // Save user data to session storage and update state

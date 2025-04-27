@@ -90,3 +90,24 @@ form button:hover {
     padding: 8px;
   }
 }
+
+@media (max-width: 480px) {
+  .form-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  form label {
+    font-size: 0.8rem;
+  }
+
+  form input {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  form button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

@@ -11,7 +11,7 @@ function DestinationGrid() {
   const fetchDestinations = async () => {
     try {
       const response = await fetch(
-        "https://my-app-backend-kb5c.onrender.com/api/destinations"
+        "http://localhost:3000/destinations"
       );
       if (!response.ok) throw new Error("Failed to fetch destinations");
       const data = await response.json();

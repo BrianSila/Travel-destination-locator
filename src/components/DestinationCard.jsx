@@ -2,29 +2,7 @@ import React, { useState } from "react";
 import DestinationModal from "./DestinationModal";
 import "./DestinationCard.css";
 
-function getStarRating(rating) {
-  const fullStars = Math.floor(rating);
-  const halfStar = rating % 1 >= 0.5 ? 1 : 0;
-  const emptyStars = 5 - fullStars - halfStar;
-
-  return (
-    <>
-      {Array(fullStars)
-        .fill()
-        .map((_, i) => (
-          <i key={`full-${i}`} className="fas fa-star"></i>
-        ))}
-      {halfStar === 1 && <i className="fas fa-star-half-alt"></i>}
-      {Array(emptyStars)
-        .fill()
-        .map((_, i) => (
-          <i key={`empty-${i}`} className="far fa-star"></i>
-        ))}
-    </>
-  );
-}
-
-const DestinationCard = ({ destination }) => {
+const DestinationCard = ({ destination, onEdit }) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const handleViewDetails = () => {
@@ -33,6 +11,24 @@ const DestinationCard = ({ destination }) => {
 
   const handleCloseModal = () => {
     setModalOpen(false);
+  };
+
+  const renderStars = (rating) => {
+    const fullStars = Math.floor(rating);
+    const halfStar = rating % 1 >= 0.5;
+    const stars = [];
+
+    for (let i = 0; i < fullStars; i++) {
+      stars.push("★");
+    }
+    if (halfStar) {
+      stars.push("☆");
+    }
+    while (stars.length < 5) {
+      stars.push("☆");
+    }
+
+    return stars.join(" ");
   };
 
   return (
@@ -45,14 +41,24 @@ const DestinationCard = ({ destination }) => {
         />
         <div className="destination-info">
           <h3>{destination.name}</h3>
+          <p className="rating">
+            {renderStars(destination.rating)} ({destination.rating})
+          </p>
           <p className="location">
             {destination.country}, {destination.continent}
           </p>
-          <div className="rating">{getStarRating(destination.rating)}</div>
           <p className="description">{destination.description}</p>
-          <button className="view-btn" onClick={handleViewDetails}>
-            View Details
-          </button>
+          <div className="button-group">
+            <button className="view-btn" onClick={handleViewDetails}>
+              View Details
+            </button>
+            <button
+              className="edit-btn"
+              onClick={() => onEdit({ ...destination })}
+            >
+              Edit
+            </button>
+          </div>
         </div>
       </div>
       <DestinationModal

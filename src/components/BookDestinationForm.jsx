@@ -34,7 +34,7 @@ const BookDestinationForm = ({ destination, onClose }) => {
     const bookingData = { ...formData, destination: destination.name };
 
     try {
-      const response = await fetch("http://localhost:3000/Booked-Locations", {
+      const response = await fetch("http://localhost:3000/bookedLocations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(bookingData),

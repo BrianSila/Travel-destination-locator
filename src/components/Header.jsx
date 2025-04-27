@@ -11,7 +11,6 @@ const Header = () => {
           <p>Discover your next adventure</p>
         </div>
       </header>
-      <Navbar />
     </>
   );
 };

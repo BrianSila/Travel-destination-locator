@@ -74,6 +74,15 @@
   background-color: #003399;
 }
 
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .navbar-buttons {
     display: none;
@@ -81,5 +90,28 @@
 
   .menu-toggle {
     display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar-title {
+    font-size: 1.2rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .side-menu {
+    width: 100%;
+  }
+
+  .side-menu button {
+    padding: 8px;
+    font-size: 0.9rem;
   }
 }

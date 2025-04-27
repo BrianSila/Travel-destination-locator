@@ -1,22 +1,105 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DestinationForm.css";
 
-const DestinationForm = () => {
+const DestinationForm = ({ existingData, onSubmit }) => {
+  const [formData, setFormData] = useState(
+    existingData || {
+      name: "",
+      country: "",
+      continent: "",
+      description: "",
+      image: "",
+      bestTimeToVisit: "",
+      averageCost: "",
+      travelTip: "",
+      longDescription: "",
+      rating: "",
+    }
+  );
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(
+        existingData
+          ? `http://localhost:3000/destinations/${existingData.id}`
+          : "http://localhost:3000/destinations",
+        {
+          method: existingData ? "PUT" : "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      if (response.ok) {
+        alert(
+          existingData
+            ? "Destination updated successfully!"
+            : "Destination added successfully!"
+        );
+        setFormData({
+          name: "",
+          country: "",
+          continent: "",
+          description: "",
+          image: "",
+          bestTimeToVisit: "",
+          averageCost: "",
+          travelTip: "",
+          longDescription: "",
+          rating: "",
+        });
+        if (onSubmit) onSubmit();
+      } else {
+        alert("Failed to save destination.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred while saving the destination.");
+    }
+  };
+
   return (
     <div className="destination-form">
-      <h2>Add a New Destination</h2>
-      <form>
+      <h2>{existingData ? "Edit Destination" : "Add a New Destination"}</h2>
+      <form onSubmit={handleSubmit}>
         <label>
           Name:
-          <input type="text" name="name" required />
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
         </label>
         <label>
           Country:
-          <input type="text" name="country" required />
+          <input
+            type="text"
+            name="country"
+            value={formData.country}
+            onChange={handleChange}
+            required
+          />
         </label>
         <label>
           Continent:
-          <select name="continent" required>
+          <select
+            name="continent"
+            value={formData.continent}
+            onChange={handleChange}
+            required
+          >
             <option value="africa">Africa</option>
             <option value="asia">Asia</option>
             <option value="europe">Europe</option>
@@ -28,13 +111,77 @@ const DestinationForm = () => {
         </label>
         <label>
           Description:
-          <textarea name="description" required></textarea>
+          <textarea
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+            required
+          ></textarea>
+        </label>
+        <label>
+          Long Description:
+          <textarea
+            name="longDescription"
+            value={formData.longDescription}
+            onChange={handleChange}
+            required
+          ></textarea>
         </label>
         <label>
           Image URL:
-          <input type="url" name="image" required />
+          <input
+            type="url"
+            name="image"
+            value={formData.image}
+            onChange={handleChange}
+            required
+          />
         </label>
-        <button type="submit">Add Destination</button>
+        <label>
+          Best time to visit:
+          <input
+            type="text"
+            name="bestTimeToVisit"
+            value={formData.bestTimeToVisit}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          Average Cost:
+          <input
+            type="number"
+            name="averageCost"
+            value={formData.averageCost}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          Travel tip:
+          <input
+            type="text"
+            name="travelTip"
+            value={formData.travelTip}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          Rating:
+          <input
+            type="number"
+            name="rating"
+            value={formData.rating}
+            onChange={handleChange}
+            min="1"
+            max="5"
+            required
+          />
+        </label>
+        <button type="submit">
+          {existingData ? "Update Destination" : "Add Destination"}
+        </button>
       </form>
     </div>
   );

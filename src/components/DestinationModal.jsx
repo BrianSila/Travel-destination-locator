@@ -23,26 +23,16 @@ const DestinationModal = ({ destination, isOpen, onClose }) => {
     setCommentFormOpen(false);
   };
 
-  const getStarRating = (rating) => {
-    const fullStars = Math.floor(rating);
-    const halfStar = rating % 1 >= 0.5 ? 1 : 0;
-    const emptyStars = 5 - fullStars - halfStar;
-
-    return (
-      <>
-        {Array(fullStars)
-          .fill()
-          .map((_, i) => (
-            <i key={`full-${i}`} className="fas fa-star"></i>
-          ))}
-        {halfStar === 1 && <i className="fas fa-star-half-alt"></i>}
-        {Array(emptyStars)
-          .fill()
-          .map((_, i) => (
-            <i key={`empty-${i}`} className="far fa-star"></i>
-          ))}
-      </>
-    );
+  const renderStars = (rating) => {
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+      stars.push(
+        <span key={i} className={i < rating ? "star filled" : "star"}>
+          &#9733;
+        </span>
+      );
+    }
+    return stars;
   };
 
   if (!isOpen || !destination) return null;
@@ -64,9 +54,6 @@ const DestinationModal = ({ destination, isOpen, onClose }) => {
             <p className="location" id="modal-location">
               {destination.country}, {destination.continent}
             </p>
-            <div className="rating" id="modal-rating">
-              {getStarRating(destination.rating)}
-            </div>
             <p className="description" id="modal-description">
               {destination.longDescription || destination.description}
             </p>
@@ -87,13 +74,21 @@ const DestinationModal = ({ destination, isOpen, onClose }) => {
                   {destination.travelTips || "No tips available"}
                 </span>
               </p>
+              <p>
+                <strong>Rating:</strong>{" "}
+                <span id="modal-rating">
+                  {renderStars(destination.rating)} ({destination.rating})
+                </span>
+              </p>
             </div>
-            <button className="book-btn" onClick={handleOpenBookingForm}>
-              Book a Trip
-            </button>
-            <button className="comment-btn" onClick={handleOpenCommentForm}>
-              Leave a Comment
-            </button>
+            <div className="button-group">
+              <button className="book-btn" onClick={handleOpenBookingForm}>
+                Book a Trip
+              </button>
+              <button className="comment-btn" onClick={handleOpenCommentForm}>
+                Leave a Comment
+              </button>
+            </div>
           </div>
         </div>
       </div>

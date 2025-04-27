@@ -166,16 +166,16 @@
   }
 
   .comment-form h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .comment-form textarea {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     padding: 0.4rem;
   }
 
   .comment-form button {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     padding: 0.4rem 0.8rem;
   }
 }

@@ -225,22 +225,22 @@
 
 @media (max-width: 320px) {
   .modal-content {
-    padding: 8px;
+    padding: 5px;
   }
 
   .modal-info h2 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .modal-info .location,
   .modal-info .description,
   .details p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .book-btn,
   .comment-btn {
     font-size: 0.6rem;
-    padding: 4px 8px;
+    padding: 4px 6px;
   }
 }

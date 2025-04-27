@@ -11,3 +11,9 @@
     gap: 15px;
   }
 }
+
+@media (max-width: 320px) {
+  .destinations-grid {
+    gap: 10px;
+  }
+}

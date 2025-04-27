@@ -130,3 +130,23 @@
     padding: 6px 10px;
   }
 }
+
+@media (max-width: 320px) {
+  .destination-img {
+    height: 100px;
+  }
+
+  .destination-info h3 {
+    font-size: 0.8rem;
+  }
+
+  .destination-info p {
+    font-size: 0.7rem;
+  }
+
+  .view-btn,
+  .edit-btn {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+}

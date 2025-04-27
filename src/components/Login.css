@@ -62,3 +62,20 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+@media (max-width: 320px) {
+  .login-container form {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .login-container input {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  .login-container button {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+}

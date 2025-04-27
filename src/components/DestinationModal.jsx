@@ -3,11 +3,15 @@ import BookDestinationForm from "./BookDestinationForm";
 import CommentForm from "./CommentForm"; // Import the new CommentForm component
 import "./DestinationModal.css";
 
-const DestinationModal = ({ destination, isOpen, onClose }) => {
+const DestinationModal = ({ destination, isOpen, onClose, loggedInUser }) => {
   const [isBookingFormOpen, setBookingFormOpen] = useState(false);
   const [isCommentFormOpen, setCommentFormOpen] = useState(false); // State for comment form
 
   const handleOpenBookingForm = () => {
+    if (!loggedInUser) {
+      alert("Please log in or sign up to book a trip.");
+      return;
+    }
     setBookingFormOpen(true);
   };
 

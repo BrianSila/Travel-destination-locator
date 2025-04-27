@@ -71,3 +71,25 @@ form button:hover {
     padding: 6px 10px;
   }
 }
+
+@media (max-width: 320px) {
+  form {
+    padding: 8px;
+  }
+
+  form label {
+    font-size: 0.7rem;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  form button {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+}

@@ -115,3 +115,14 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 320px) {
+  .navbar-title {
+    font-size: 0.9rem;
+  }
+
+  .side-menu button {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+}

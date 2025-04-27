@@ -26,7 +26,7 @@ Global Travel Finder is an easy-to-use web application designed to help users di
 
 ## Problem Statement
 
-Travel enthusiasts often struggle to find destinations that align with their specific interests, whether for a relaxing getaway, an adventurous trip, or a cultural exploration. With so many places to visit around the world, it can be overwhelming to narrow the options and find a destination that fits personal preferences.
+Travel enthusiasts often struggle to find destinations that align with their specific interests, whether for a relaxing getaway, an adventurous trip, or a cultural exploration. With so many places to visit around the world, it can be overwhelming to narrow down the options and find a destination that fits personal preferences.
 
 ---
 
@@ -55,13 +55,13 @@ The app was developed using the following technologies:
    Users can input their travel location preferences (e.g., Africa, North America, Asia) to receive tailored destination recommendations.
 
 2. **Destination History**  
-   Users receive a brief history of the travel destination and what is expected from the country (e.g., the best time to travel, cost of travel).
+   Users receive a brief history of the travel destination and what is expected from the country (e.g., the best time to travel, the cost of travel).
 
 3. **Travel Tips**  
-   The app offers relevant travel tips based on factors such as weather conditions and time of travel.
+   The app offers relevant travel tips based on factors such as weather conditions and travel time.
 
 4. **Trip Booking**  
-   Users can book travel trips based on the number of people and the number of days to be spent.
+   Users can book travel trips based on the number of people and the number of days spent.
 
 5. **Add a Travel Destination**  
    Users can contribute by adding new travel destinations to the database.
@@ -84,7 +84,7 @@ Follow these steps to set up the project locally:
 2. Navigate to the project directory:
 
    ```bash
-   cd Travel-destination-finder
+   cd Travel-destination-locator
    ```
 
 3. Install dependencies:

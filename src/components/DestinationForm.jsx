@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./DestinationForm.css";
 
 const DestinationForm = ({ existingData, onSubmit }) => {
+  const navigate = useNavigate(); // Initialize navigate
   const [formData, setFormData] = useState(
     existingData || {
       name: "",
@@ -68,6 +70,7 @@ const DestinationForm = ({ existingData, onSubmit }) => {
           rating: "",
         });
         if (onSubmit) onSubmit();
+        navigate("/"); 
       } else {
         alert("Failed to save destination.");
       }

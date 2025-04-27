@@ -8,6 +8,7 @@ const Navbar = ({
   onLogoutClick,
   loggedInUser,
 }) => {
+  const navigate = useNavigate(); // Add this line to define navigate
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isLogoutVisible, setLogoutVisible] = useState(false);
 

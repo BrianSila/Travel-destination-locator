@@ -6,6 +6,7 @@ const DestinationForm = ({ existingData, onSubmit }) => {
   const navigate = useNavigate(); // Initialize navigate
   const [formData, setFormData] = useState(
     existingData || {
+      id: "",
       name: "",
       country: "",
       continent: "",

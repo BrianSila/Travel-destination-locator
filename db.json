@@ -1,7 +1,7 @@
 {
   "destinations": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Eiffel Tower",
       "country": "France",
       "continent": "Europe",
@@ -14,7 +14,7 @@
       "travelTips": "Visit early in the morning to avoid crowds. Consider taking the stairs for a unique experience."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Great Wall of China",
       "country": "China",
       "continent": "Asia",
@@ -23,11 +23,11 @@
       "longDescription": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe. Several walls were being built as early as the 7th century BCE; these were later joined together and made bigger and stronger, and are now collectively referred to as the Great Wall.",
       "rating": 4.9,
       "bestTimeToVisit": "April to May, September to October",
-      "averageCost": "1500 Usd",
+      "averageCost": "1000",
       "travelTips": "Wear comfortable shoes as you'll be doing a lot of walking. The Mutianyu section is less crowded than Badaling."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Machu Picchu",
       "country": "Peru",
       "continent": "South America",
@@ -40,7 +40,7 @@
       "travelTips": "Acclimate to the altitude in Cusco before visiting. Book tickets well in advance as they're limited."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Serengeti National Park",
       "country": "Tanzania",
       "continent": "Africa",
@@ -53,7 +53,7 @@
       "travelTips": "Bring binoculars and a good camera. Early morning game drives offer the best wildlife sightings."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Great Barrier Reef",
       "country": "Australia",
       "continent": "Australia",
@@ -66,7 +66,7 @@
       "travelTips": "Use reef-safe sunscreen to protect the coral. Consider a liveaboard trip for the best diving experience."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Grand Canyon",
       "country": "United States",
       "continent": "North America",
@@ -79,7 +79,7 @@
       "travelTips": "Visit both the South Rim (more accessible) and North Rim (less crowded). Sunrise and sunset offer spectacular views."
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Antarctic Peninsula",
       "country": "Antarctica",
       "continent": "Antarctica",
@@ -92,7 +92,7 @@
       "travelTips": "Book with an experienced polar expedition company. Pack layers for varying weather conditions."
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Santorini",
       "country": "Greece",
       "continent": "Europe",
@@ -105,7 +105,7 @@
       "travelTips": "Stay in Oia for the famous sunsets but explore less crowded villages like Pyrgos too."
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Tokyo",
       "country": "Japan",
       "continent": "Asia",
@@ -118,7 +118,7 @@
       "travelTips": "Get a Suica card for easy public transport. Visit Tsukiji Outer Market for amazing seafood."
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Rio de Janeiro",
       "country": "Brazil",
       "continent": "South America",
@@ -131,7 +131,7 @@
       "travelTips": "Take the cog train to Christ the Redeemer for the best experience. Be cautious with valuables on the beach."
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Victoria Falls",
       "country": "Zambia/Zimbabwe",
       "continent": "Africa",
@@ -144,7 +144,7 @@
       "travelTips": "Visit both the Zambian and Zimbabwean sides for different perspectives. Take a helicopter flight for amazing views."
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Sydney Opera House",
       "country": "Australia",
       "continent": "Australia",
@@ -157,7 +157,7 @@
       "travelTips": "Take a guided tour to learn about the architecture. Enjoy a performance if possible for the full experience."
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Banff National Park",
       "country": "Canada",
       "continent": "North America",
@@ -170,7 +170,7 @@
       "travelTips": "Visit Lake Louise and Moraine Lake early to avoid crowds. The hot springs are a great way to relax after hiking."
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Petra",
       "country": "Jordan",
       "continent": "Asia",
@@ -183,7 +183,7 @@
       "travelTips": "Arrive early to see the Treasury in morning light. Wear comfortable shoes as there's lots of walking."
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Venice",
       "country": "Italy",
       "continent": "Europe",
@@ -196,7 +196,7 @@
       "travelTips": "Get lost in the back alleys away from tourist crowds. Visit Burano island for colorful houses."
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Yosemite National Park",
       "country": "United States",
       "continent": "North America",
@@ -209,7 +209,7 @@
       "travelTips": "Reserve accommodations well in advance. Hike to Glacier Point for amazing views."
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Angkor Wat",
       "country": "Cambodia",
       "continent": "Asia",
@@ -222,7 +222,7 @@
       "travelTips": "Visit at sunrise for a magical experience. Get a 3-day pass to explore beyond the main temple."
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Northern Lights (Aurora Borealis)",
       "country": "Various (Norway, Iceland, etc.)",
       "continent": "Europe",
@@ -235,7 +235,7 @@
       "travelTips": "Go to remote areas away from light pollution. Be patient as sightings aren't guaranteed."
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Galápagos Islands",
       "country": "Ecuador",
       "continent": "South America",
@@ -248,7 +248,7 @@
       "travelTips": "Book a liveaboard cruise to visit multiple islands. Follow all conservation rules strictly."
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Dubai",
       "country": "United Arab Emirates",
       "continent": "Asia",
@@ -261,7 +261,7 @@
       "travelTips": "Visit during the Dubai Shopping Festival for great deals. Dress modestly in public areas."
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Amazon Rainforest",
       "country": "Brazil/Peru/etc.",
       "continent": "South America",
@@ -274,7 +274,7 @@
       "travelTips": "Choose eco-friendly lodges. Bring insect repellent and lightweight, long-sleeved clothing."
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Bora Bora",
       "country": "French Polynesia",
       "continent": "Australia",
@@ -287,7 +287,7 @@
       "travelTips": "Stay in an overwater bungalow for the full experience. Try snorkeling with reef sharks."
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Cape Town",
       "country": "South Africa",
       "continent": "Africa",
@@ -300,7 +300,7 @@
       "travelTips": "Take the cable car up Table Mountain on a clear day. Visit the penguins at Boulders Beach."
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Iguazu Falls",
       "country": "Argentina/Brazil",
       "continent": "South America",
@@ -313,7 +313,7 @@
       "travelTips": "Visit both the Argentine and Brazilian sides for different perspectives. Take the boat ride under the falls."
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Marrakech",
       "country": "Morocco",
       "continent": "Africa",
@@ -326,7 +326,7 @@
       "travelTips": "Stay in a riad (traditional house) in the medina. Bargain hard in the souks."
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "New York City",
       "country": "United States",
       "continent": "North America",
@@ -339,7 +339,7 @@
       "travelTips": "Get a MetroCard for subway access. Visit museums on free admission days."
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Paris",
       "country": "France",
       "continent": "Europe",
@@ -352,7 +352,7 @@
       "travelTips": "Buy a museum pass if visiting multiple sites. Explore neighborhoods beyond the main tourist areas."
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Rome",
       "country": "Italy",
       "continent": "Europe",
@@ -365,7 +365,7 @@
       "travelTips": "Book Vatican tickets in advance to skip long lines. Try authentic carbonara in Trastevere."
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Barcelona",
       "country": "Spain",
       "continent": "Europe",
@@ -378,7 +378,7 @@
       "travelTips": "Book Sagrada Família tickets online to skip queues. Try tapas in the Gothic Quarter."
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Prague",
       "country": "Czech Republic",
       "continent": "Europe",
@@ -391,7 +391,7 @@
       "travelTips": "Visit Prague Castle early to avoid crowds. Try traditional Czech beer and goulash."
     },
     {
-      "id": 31,
+      "id": "31",
       "name": "Amsterdam",
       "country": "Netherlands",
       "continent": "Europe",
@@ -404,7 +404,7 @@
       "travelTips": "Rent a bike to explore like a local. Visit the Anne Frank House (book tickets well in advance)."
     },
     {
-      "id": 32,
+      "id": "32",
       "name": "Budapest",
       "country": "Hungary",
       "continent": "Europe",
@@ -417,7 +417,7 @@
       "travelTips": "Visit the thermal baths (Széchenyi is most famous). Take a night cruise on the Danube."
     },
     {
-      "id": 33,
+      "id": "33",
       "name": "Vienna",
       "country": "Austria",
       "continent": "Europe",
@@ -430,7 +430,7 @@
       "travelTips": "Attend a classical music performance. Try Sachertorte at Café Sacher."
     },
     {
-      "id": 34,
+      "id": "34",
       "name": "Edinburgh",
       "country": "Scotland",
       "continent": "Europe",
@@ -443,7 +443,7 @@
       "travelTips": "Visit during the Edinburgh Festival Fringe in August. Hike up Arthur's Seat for great views."
     },
     {
-      "id": 35,
+      "id": "35",
       "name": "Istanbul",
       "country": "Turkey",
       "continent": "Asia",
@@ -456,7 +456,7 @@
       "travelTips": "Visit the Grand Bazaar for shopping. Try authentic Turkish breakfast and baklava."
     },
     {
-      "id": 36,
+      "id": "36",
       "name": "Kyoto",
       "country": "Japan",
       "continent": "Asia",
@@ -469,7 +469,7 @@
       "travelTips": "Visit Fushimi Inari Shrine early to avoid crowds. Try a traditional tea ceremony."
     },
     {
-      "id": 37,
+      "id": "37",
       "name": "Bali",
       "country": "Indonesia",
       "continent": "Asia",
@@ -482,7 +482,7 @@
       "travelTips": "Visit Ubud for culture and Uluwatu for beaches. Respect local customs at temples."
     },
     {
-      "id": 38,
+      "id": "38",
       "name": "Halong Bay",
       "country": "Vietnam",
       "continent": "Asia",
@@ -495,7 +495,7 @@
       "travelTips": "Take an overnight cruise to experience the bay fully. Kayak to hidden lagoons."
     },
     {
-      "id": 39,
+      "id": "39",
       "name": "Taj Mahal",
       "country": "India",
       "continent": "Asia",
@@ -508,7 +508,7 @@
       "travelTips": "Visit at sunrise for the best light and fewer crowds. The north gate has shorter lines."
     },
     {
-      "id": 40,
+      "id": "40",
       "name": "Cappadocia",
       "country": "Turkey",
       "continent": "Asia",
@@ -521,7 +521,7 @@
       "travelTips": "Take a sunrise hot air balloon ride. Stay in a cave hotel for a unique experience."
     },
     {
-      "id": 41,
+      "id": "41",
       "name": "Patagonia",
       "country": "Argentina/Chile",
       "continent": "South America",
@@ -534,7 +534,7 @@
       "travelTips": "Hike the 'W' circuit in Torres del Paine. Bring layers for unpredictable weather."
     },
     {
-      "id": 42,
+      "id": "42",
       "name": "Yellowstone National Park",
       "country": "United States",
       "continent": "North America",
@@ -547,7 +547,7 @@
       "travelTips": "Book accommodations well in advance. Stay on boardwalks near geothermal features."
     },
     {
-      "id": 43,
+      "id": "43",
       "name": "Maldives",
       "country": "Maldives",
       "continent": "Asia",
@@ -560,7 +560,7 @@
       "travelTips": "Stay in an overwater villa. Try snorkeling or diving to see manta rays and whale sharks."
     },
     {
-      "id": 44,
+      "id": "44",
       "name": "Seychelles",
       "country": "Seychelles",
       "continent": "Africa",
@@ -573,7 +573,7 @@
       "travelTips": "Visit Vallée de Mai to see the rare coco de mer palm. Try Creole cuisine."
     },
     {
-      "id": 45,
+      "id": "45",
       "name": "Zermatt",
       "country": "Switzerland",
       "continent": "Europe",
@@ -586,7 +586,7 @@
       "travelTips": "Take the Gornergrat railway for stunning Matterhorn views. Try raclette, a local cheese dish."
     },
     {
-      "id": 46,
+      "id": "46",
       "name": "Banff National Park",
       "country": "Canada",
       "continent": "North America",
@@ -599,7 +599,7 @@
       "travelTips": "Visit Lake Louise and Moraine Lake early to avoid crowds. The hot springs are a great way to relax after hiking."
     },
     {
-      "id": 47,
+      "id": "47",
       "name": "Queenstown",
       "country": "New Zealand",
       "continent": "Australia",
@@ -612,7 +612,7 @@
       "travelTips": "Try bungee jumping or jet boating. Take the gondola up Bob's Peak for amazing views."
     },
     {
-      "id": 48,
+      "id": "48",
       "name": "Fiordland National Park",
       "country": "New Zealand",
       "continent": "Australia",
@@ -625,7 +625,7 @@
       "travelTips": "Take a cruise on Milford Sound. Hike the Milford Track if possible."
     },
     {
-      "id": 49,
+      "id": "49",
       "name": "Uluru (Ayers Rock)",
       "country": "Australia",
       "continent": "Australia",
@@ -638,7 +638,7 @@
       "travelTips": "Respect indigenous culture - climbing Uluru is discouraged. Visit at sunrise or sunset for color changes."
     },
     {
-      "id": 50,
+      "id": "50",
       "name": "Plitvice Lakes National Park",
       "country": "Croatia",
       "continent": "Europe",
@@ -651,7 +651,7 @@
       "travelTips": "Visit early to avoid crowds. Wear sturdy shoes for wooden trail walks."
     },
     {
-      "id": 51,
+      "id": "51",
       "name": "Santorini",
       "country": "Greece",
       "continent": "Europe",
@@ -664,7 +664,7 @@
       "travelTips": "Stay in Oia for sunsets but explore lesser-known villages like Pyrgos."
     },
     {
-      "id": 52,
+      "id": "52",
       "name": "Zhangjiajie National Forest Park",
       "country": "China",
       "continent": "Asia",
@@ -677,7 +677,7 @@
       "travelTips": "Avoid Chinese national holidays. Take the cable car for panoramic views."
     },
     {
-      "id": 53,
+      "id": "53",
       "name": "Salar de Uyuni",
       "country": "Bolivia",
       "continent": "South America",
@@ -690,7 +690,7 @@
       "travelTips": "Bring sunglasses—the salt reflects intense sunlight. Stay overnight to stargaze."
     },
     {
-      "id": 54,
+      "id": "54",
       "name": "Meteora",
       "country": "Greece",
       "continent": "Europe",
@@ -703,7 +703,7 @@
       "travelTips": "Dress modestly to enter monasteries. Visit at sunrise for fewer crowds."
     },
     {
-      "id": 55,
+      "id": "55",
       "name": "Jeju Island",
       "country": "South Korea",
       "continent": "Asia",
@@ -716,7 +716,7 @@
       "travelTips": "Rent a car to explore freely. Try black pork BBQ and hallabong oranges."
     },
     {
-      "id": 56,
+      "id": "56",
       "name": "Namib Desert",
       "country": "Namibia",
       "continent": "Africa",
@@ -729,7 +729,7 @@
       "travelTips": "Climb Dune 45 at sunrise. Carry ample water and sunscreen."
     },
     {
-      "id": 57,
+      "id": "57",
       "name": "Raja Ampat",
       "country": "Indonesia",
       "continent": "Asia",
@@ -742,7 +742,7 @@
       "travelTips": "Book liveaboards for diving. Use reef-safe sunscreen."
     },
     {
-      "id": 58,
+      "id": "58",
       "name": "Faroe Islands",
       "country": "Denmark",
       "continent": "Europe",
@@ -755,7 +755,7 @@
       "travelTips": "Pack waterproof gear. Respect local sheep—they outnumber humans!"
     },
     {
-      "id": 59,
+      "id": "59",
       "name": "Bhutan",
       "country": "Bhutan",
       "continent": "Asia",
@@ -768,7 +768,7 @@
       "travelTips": "Book through a licensed tour operator. Dress modestly at religious sites."
     },
     {
-      "id": 60,
+      "id": "60",
       "name": "Nairobi",
       "country": "Kenya",
       "continent": "Africa",
@@ -783,14 +783,14 @@
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "destinationId": 1,
       "user": "John Doe",
       "comment": "The Eiffel Tower is stunning! A must-visit.",
       "date": "2023-10-01"
     },
     {
-      "id": 2,
+      "id": "2",
       "destinationId": 2,
       "user": "Jane Smith",
       "comment": "The Great Wall is breathtaking. Wear comfortable shoes!",
@@ -813,14 +813,14 @@
   ],
   "bookedLocations": [
     {
-      "id": 1,
+      "id": "1",
       "destinationId": 1,
       "user": "Alice Johnson",
       "bookingDate": "2023-10-05",
       "status": "confirmed"
     },
     {
-      "id": 2,
+      "id": "2",
       "destinationId": 3,
       "user": "Bob Brown",
       "bookingDate": "2023-10-06",
@@ -838,14 +838,14 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Alice Johnson",
       "email": "alice.johnson@example.com",
       "password": "hashed_password_1",
       "image": "https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Bob Brown",
       "email": "bob.brown@example.com",
       "password": "hashed_password_2",
@@ -855,6 +855,13 @@
       "id": "a4b9",
       "name": "Brian",
       "email": "Brian@gmail.com",
+      "password": "  ",
+      "image": ""
+    },
+    {
+      "id": "ac8f",
+      "name": "Ryan ",
+      "email": "Ryan@gmail.com",
       "password": "  ",
       "image": ""
     }

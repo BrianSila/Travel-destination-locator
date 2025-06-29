@@ -4,13 +4,13 @@
       "id": "1",
       "name": "Eiffel Tower",
       "country": "France",
-      "continent": "Europe",
+      "continent": "europe",
       "image": "https://images.unsplash.com/photo-1565881606991-789a8dff9dbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWlmZmVsJTIwdG93ZXJ8ZW58MHx8MHx8fDA%3D",
       "description": "The iconic iron tower in Paris, offering breathtaking views of the city.",
       "longDescription": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially criticized by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognizable structures in the world.",
-      "rating": 4.8,
+      "rating": "5",
       "bestTimeToVisit": "April to June, September to November",
-      "averageCost": "1000 Usd",
+      "averageCost": "1500",
       "travelTips": "Visit early in the morning to avoid crowds. Consider taking the stairs for a unique experience."
     },
     {
@@ -809,6 +809,20 @@
       "user": "Alex ",
       "comment": "Make friend early.",
       "date": "2025-04-27T11:21:59.215Z"
+    },
+    {
+      "id": "83bf",
+      "destinationId": "55",
+      "user": "Rose ",
+      "comment": "Loved the place. A must visit",
+      "date": "2025-04-28T12:31:41.077Z"
+    },
+    {
+      "id": "3e96",
+      "destinationId": "55",
+      "user": "Skinny bones ",
+      "comment": "WELcome anyTime ",
+      "date": "2025-04-28T12:32:36.213Z"
     }
   ],
   "bookedLocations": [
@@ -832,6 +846,24 @@
       "email": "brian.sila1@student.moringaschool.com",
       "travelDate": "2025-06-29",
       "numberOfPeople": "3",
+      "numberOfDays": "14",
+      "destination": "Nairobi"
+    },
+    {
+      "id": "5d85",
+      "name": "Brian Sila",
+      "email": "brian.sila1@student.moringaschool.com",
+      "travelDate": "2025-07-28",
+      "numberOfPeople": "2",
+      "numberOfDays": "14",
+      "destination": "Jeju Island"
+    },
+    {
+      "id": "5888",
+      "name": "Brian Sila",
+      "email": "brian.sila1@student.moringaschool.com",
+      "travelDate": "2025-05-24",
+      "numberOfPeople": "2",
       "numberOfDays": "14",
       "destination": "Nairobi"
     }
